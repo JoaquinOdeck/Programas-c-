@@ -13,8 +13,12 @@ int main ()
 	printf("Ingrese la cantidad de metros que retrocede el cangrejo: ");
 	scanf("%i",&retrocede);
 	printf("\n");
-
-		if(retrocede < avanza)
+	
+    if(metros <= avanza)
+	{
+	printf("EL CANGREJO SOLO TARDA UN DIA EN SALIR.\n\n");
+    }	
+	else if(retrocede < avanza)
 	    {
 		    while( suma < metros)
 	        { 
@@ -31,14 +35,13 @@ int main ()
 		        }
 	        }
 	        printf("El cangrejo tarda %d dia(s) en salir.\n",dia);
-			printf("El cangrejo estubo %d noche(s) en el pozo.\n",noche);		
+			printf("El cangrejo estubo %d noche(s) en el pozo.\n\n",noche);		
 	    }
 	    else
 	    {
-	    printf("El cangrejo no podra salir...\n");
-	    }	
-	 	
-	
+	    printf("EL CANGREJO NO PODRA SALIR...\n");
+	    }
+		    
 	system("pause");
 	return 0;
 }
